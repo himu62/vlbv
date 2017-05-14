@@ -1,1 +1,19 @@
-memo = "ab4fef131ee828e96ba67d31a7d690bd5f2f42040c6766b1b12fe856f87e0ff7"
+memo = "c40a23a55ed30b0dbfa42e32a72e04b272088d0ac23e280a1d2c1c42f222abfe"
+
+[[projects]]
+  name = "github.com/Knetic/govaluate"
+  packages = ["."]
+  revision = "d216395917cc49052c7c7094cf57f09657ca08a8"
+  version = "v3.0.0"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/lxn/walk"
+  packages = [".","declarative"]
+  revision = "5d9372f3dae5ec703af73ba07cec7a530aea2ec0"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/lxn/win"
+  packages = ["."]
+  revision = "cd28d435f783e79477f1ebbd983dd8dd72315064"
