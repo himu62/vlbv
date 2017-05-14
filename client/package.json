@@ -1,0 +1,16 @@
+{
+  "name": "vlbv",
+  "version": "1.0.0",
+  "repository": "https://github.com/himu62/vlbv.git",
+  "author": "himu62",
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --production",
+    "watch": "./node_modules/.bin/webpack --watch",
+    "test": "./node_modules/.bin/karma start"
+  },
+  "devDependencies": {
+    "karma": "^1.7.0",
+    "webpack": "^2.5.1"
+  }
+}
