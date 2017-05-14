@@ -18,6 +18,8 @@ func main() {
 					log.Println("clicked")
 				},
 			},
+			ListBox{},
+			ProgressBar{},
 		},
 	}.Run()
 }

@@ -6,7 +6,6 @@ run: build
 	vlbv.exe
 
 build:
-	rsrc -manifest vlbv.manifest -o rsrc.syso
 	go build -o vlbv.exe -ldflags="-H windowsgui"
 
 test:
