@@ -3,17 +3,16 @@ package main
 import (
 	"log"
 
-	"github.com/lxn/walk"
 	. "github.com/lxn/walk/declarative"
 )
 
 func main() {
-	walk.MainWindow{
+	MainWindow{
 		Title:   "Title",
-		MinSize: walk.Size{480, 320},
-		Layout:  walk.VBox{},
-		children: []walk.Widget{
-			walk.PushButton{
+		MinSize: Size{480, 320},
+		Layout:  VBox{},
+		Children: []Widget{
+			PushButton{
 				Text: "Button",
 				OnClicked: func() {
 					log.Println("clicked")

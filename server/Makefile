@@ -1,16 +1,21 @@
-.PHONY: all run build test install
+.PHONY: all run build test install update
 
 all: run
 
-run:
-	go run vlbv.go
+run: build
+	vlbv.exe
 
 build:
-	go build vlbv.go
+	rsrc -manifest vlbv.manifest -o rsrc.syso
+	go build -o vlbv.exe -ldflags="-H windowsgui"
 
 test:
 	go test -v ./...
 
 install:
 	go get -u -v github.com/golang/dep/cmd/dep
-	dep ensure
+	go get -u -v github.com/akavel/rsrc
+	dep ensure -v -update
+
+update:
+	dep ensure -v -update
