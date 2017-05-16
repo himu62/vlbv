@@ -4,22 +4,20 @@ import (
 	"flag"
 	"strconv"
 
-	"github.com/himu62/vlbv/server/log"
-	"github.com/himu62/vlbv/server/web"
+	"github.com/labstack/echo"
 )
+
+var e *echo.Echo
 
 func main() {
 	port := flag.Int("port", 8080, "web server listen port")
 	isDebug := flag.Bool("debug", false, "debug flag")
 	flag.Parse()
 
-	var logger *log.Logger
-	if *isDebug {
-		logger = log.NewDebugLogger()
-	} else {
-		logger = log.NewLogger()
-	}
+	e := echo.New()
+	e.Debug = *isDebug
 
-	server := web.NewWebServer(logger)
-	server.Listen(":" + strconv.Itoa(*port))
+	e.Static("/", "public_html")
+
+	e.Logger.Fatal(e.Start(":" + strconv.Itoa(*port)))
 }

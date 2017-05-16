@@ -1,10 +1,16 @@
-memo = "cb8699015451e85f6c17a2ae62b06603294d32d3cdb5bb7a0a37e05836598d99"
+memo = "e81cc2cb20c5749b79cb0f42cab35f3eb61055f07d7352d99b06b146175242d4"
 
 [[projects]]
-  name = "github.com/Sirupsen/logrus"
+  name = "github.com/labstack/echo"
   packages = ["."]
-  revision = "ba1b36c82c5e05c4f912a88eab0dcd91a171688f"
-  version = "v0.11.5"
+  revision = "1049c9613cd371b7ea8f219404c9a821734781ed"
+  version = "v3.1.0"
+
+[[projects]]
+  name = "github.com/labstack/gommon"
+  packages = ["color","log"]
+  revision = "1121fd3e243c202482226a7afe4dcd07ffc4139a"
+  version = "v0.2.1"
 
 [[projects]]
   name = "github.com/mattn/go-colorable"
@@ -17,6 +23,24 @@ memo = "cb8699015451e85f6c17a2ae62b06603294d32d3cdb5bb7a0a37e05836598d99"
   packages = ["."]
   revision = "fc9e8d8ef48496124e79ae0df75490096eccf6fe"
   version = "v0.0.2"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/valyala/bytebufferpool"
+  packages = ["."]
+  revision = "e746df99fe4a3986f4d4f79e13c1e0117ce9c2f7"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/valyala/fasttemplate"
+  packages = ["."]
+  revision = "dcecefd839c4193db0d35b88ec65b4c12d360ab0"
+
+[[projects]]
+  branch = "master"
+  name = "golang.org/x/crypto"
+  packages = ["acme","acme/autocert"]
+  revision = "ab89591268e0c8b748cbe4047b00197516011af5"
 
 [[projects]]
   branch = "master"
