@@ -1,4 +1,4 @@
-memo = "e81cc2cb20c5749b79cb0f42cab35f3eb61055f07d7352d99b06b146175242d4"
+memo = "e1534696ddba3fee15190f7971602342df68b7eba8217a1438fd7dd150d82ba1"
 
 [[projects]]
   name = "github.com/labstack/echo"
