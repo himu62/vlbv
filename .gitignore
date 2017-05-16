@@ -5,5 +5,3 @@ node_modules/
 
 public_html/script.js
 
-bin/
-obj/
