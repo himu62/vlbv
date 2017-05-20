@@ -9,7 +9,7 @@
     "build": "webpack --production",
     "watch": "webpack --watch",
     "test": "karma start",
-    "lint": "tslint --type-check"
+    "lint": "tslint --type-check --project ./ scripts/**.ts scripts/**.tsx"
   },
   "devDependencies": {
     "karma": "^1.7.0",
