@@ -5,12 +5,17 @@
   "author": "himu62",
   "license": "MIT",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --production",
-    "watch": "./node_modules/.bin/webpack --watch",
-    "test": "./node_modules/.bin/karma start"
+    "server": "node scripts/server.js",
+    "build":  "webpack --production",
+    "watch":  "webpack --watch",
+    "test":   "karma start",
+    "lint":   "tslint --type-check"
   },
   "devDependencies": {
     "karma": "^1.7.0",
     "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
   }
 }
