@@ -6,16 +6,40 @@
   "license": "MIT",
   "scripts": {
     "server": "node scripts/server.js",
-    "build":  "webpack --production",
-    "watch":  "webpack --watch",
-    "test":   "karma start",
-    "lint":   "tslint --type-check"
+    "build": "webpack --production",
+    "watch": "webpack --watch",
+    "test": "karma start",
+    "lint": "tslint --type-check"
   },
   "devDependencies": {
     "karma": "^1.7.0",
-    "webpack": "^2.5.1"
+    "tslint": "^5.2.0"
   },
   "dependencies": {
-    "express": "^4.15.3"
+    "@types/react": "^15.0.24",
+    "@types/react-dom": "^15.5.0",
+    "@types/react-redux": "^4.4.40",
+    "@types/react-router": "^4.0.9",
+    "@types/react-router-redux": "^5.0.1",
+    "@types/superagent": "^2.0.36",
+    "autoprefixer": "^7.1.1",
+    "css-loader": "^0.28.1",
+    "express": "^4.15.3",
+    "material-ui": "^0.18.1",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.5",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-redux": "^4.0.8",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.6.0",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "superagent": "^3.5.2",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.1"
   }
 }
